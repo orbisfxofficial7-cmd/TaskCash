@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101827">
+  <title>TaskCash - Digital Store</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b1220;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #131e30;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #29364b;
+    }
+
+    header h2 {
+      margin: 0;
+      color: #55d6a2;
+      font-size: 28px;
+    }
+
+    .hero {
+      padding: 45px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 34px;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      color: #a9b5c8;
+      max-width: 500px;
+      margin: 15px auto;
+    }
+
+    .button {
+      display: inline-block;
+      background: #55d6a2;
+      color: #082016;
+      padding: 12px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .notice {
+      margin: 20px;
+      padding: 15px;
+      border: 1px solid #725f31;
+      border-radius: 10px;
+      background: #2c271a;
+      color: #f3dca1;
+    }
+
+    .products {
+      padding: 20px;
+      max-width: 950px;
+      margin: auto;
+    }
+
+    .products h2 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: #131e30;
+      border: 1px solid #29364b;
+      border-radius: 14px;
+      padding: 22px;
+      text-align: center;
+    }
+
+    .icon {
+      font-size: 42px;
+    }
+
+    .card h3 {
+      color: #55d6a2;
+    }
+
+    .card p {
+      color: #a9b5c8;
+    }
+
+    .price {
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    .disabled-button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background: #29364b;
+      color: #a9b5c8;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .how {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .how h2 {
+      text-align: center;
+    }
+
+    .step {
+      background: #131e30;
+      border: 1px solid #29364b;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 12px 0;
+    }
+
+    .step p {
+      color: #a9b5c8;
+      margin-bottom: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px 15px;
+      border-top: 1px solid #29364b;
+      color: #a9b5c8;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h2>TaskCash</h2>
+    <p>Your Digital Products Store</p>
+  </header>
+
+  <section class="hero">
+    <h1>Learn, Build and Grow</h1>
+
+    <p>
+      Discover ebooks, trading journals and practical
+      guides to help you develop skills and build
+      your digital business.
+    </p>
+
+    <a href="#products" class="button">
+      Explore Products
+    </a>
+  </section>
+
+  <div class="notice">
+    <strong>Important:</strong>
+    Payments are not connected yet.
+    No real earnings or withdrawals are processed
+    on this website at this stage.
+  </div>
+
+  <section class="products" id="products">
+
+    <h2>Our Digital Products</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <div class="icon">📘</div>
+
+        <h3>From Zero to Wealth</h3>
+
+        <p>
+          A beginner-friendly ebook about developing
+          skills, creating digital products and
+          building realistic income opportunities.
+        </p>
+
+        <div class="price">
+          Price to be configured
+        </div>
+
+        <button class="disabled-button" disabled>
+          Checkout Coming Soon
+        </button>
+      </div>
+
+      <div class="card">
+        <div class="icon">📈</div>
+
+        <h3>SMC Trading Journal</h3>
+
+        <p>
+          Organize your trading setups, record entries,
+          manage risk and review your trading decisions.
+        </p>
+
+        <div class="price">
+          Price to be configured
+        </div>
+
+        <button class="disabled-button" disabled>
+          Checkout Coming Soon
+        </button>
+      </div>
+
+      <div class="card">
+        <div class="icon">📚</div>
+
+        <h3>Trading Guide</h3>
+
+        <p>
+          Educational trading resources for beginners
+          who want to study market structure and
+          develop a trading plan.
+        </p>
+
+        <div class="price">
+          Coming Soon
+        </div>
+
+        <button class="disabled-button" disabled>
+          Coming Soon
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="how">
+
+    <h2>How TaskCash Works</h2>
+
+    <div class="step">
+      <strong>1. Sell Digital Products</strong>
+      <p>
+        List your ebooks, journals and downloadable guides.
+      </p>
+    </div>
+
+    <div class="step">
+      <strong>2. Confirm Real Payments</strong>
+      <p>
+        A connected payment provider must verify each
+        successful payment before an order is marked paid.
+      </p>
+    </div>
+
+    <div class="step">
+      <strong>3. Track Genuine Earnings</strong>
+      <p>
+        Record actual sales, transaction fees, refunds
+        and money available after settlement.
+      </p>
+    </div>
+
+    <div class="step">
+      <strong>4. Prepare Withdrawals</strong>
+      <p>
+        M-Pesa and other payout methods can be connected
+        after the required accounts and integrations
+        are configured and tested.
+      </p>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>
+      TaskCash Digital Store
+    </p>
+
+    <p>
+      Real payments and withdrawals are not active yet.
+      Trading involves financial risk, and profits
+      are never guaranteed.
+    </p>
+  </footer>
+
+</body>
+</html>
